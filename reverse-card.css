@@ -1,0 +1,25 @@
+
+/*
+    Code de la lib
+*/
+
+.card{
+    position: absolute;
+}
+
+.card-front
+{
+    z-index: 100;
+    backface-visibility: hidden;
+    transition: 2s;
+    position: absolute;
+}
+
+.card-back
+{
+    z-index: 50;
+    transform: rotateY(-180deg); /* Celui-ci est retourné par défaut */
+    backface-visibility: hidden;
+    transition: 2s;
+    position: absolute;
+}
